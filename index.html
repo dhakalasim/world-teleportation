@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>World Teleportation</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>World Teleportation</h1>
+      <div id="energy-wrap">
+        <span class="label">Energy</span>
+        <div id="energy-bar"><div id="energy-fill"></div></div>
+        <span id="energy-value">100</span>
+      </div>
+    </header>
+
+    <main>
+      <canvas id="map" width="900" height="520"></canvas>
+
+      <aside id="panel">
+        <section id="inventory">
+          <h2>Entities</h2>
+          <div id="entity-list"></div>
+        </section>
+
+        <section id="details">
+          <h2>Selected</h2>
+          <div id="selected-info">Select an entity, then click a pad to teleport it.</div>
+        </section>
+
+        <section id="log">
+          <h2>Teleport Log</h2>
+          <div id="log-list"></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
